@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'dependency_injection.dart';
-import 'features/login/login_view.dart';
+import 'features/home/home_view.dart';
 import 'flavor.dart';
 import 'provider/user_provider.dart';
 import 'router/router.dart';
@@ -29,7 +29,8 @@ class App extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         onGenerateRoute: Router.generateRoute,
-        home: LoginPage(),
+        // home: LoginPage(),
+        home: HomePage(),
       ),
     );
   }
